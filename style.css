@@ -280,3 +280,18 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   font-family: Arial, sans-serif;
 }
+
+/* Hacer que la rosa se vea más grande en celulares */
+@media (max-width: 768px) {
+  .container {
+    /* Mantenemos el centrado, pero multiplicamos su tamaño por 1.5 */
+    transform: translate(-50%, -50%) scale(1.5); 
+  }
+}
+
+/* Si aún la quieres más grande en pantallas muy pequeñas, puedes añadir esto: */
+@media (max-width: 480px) {
+  .container {
+    transform: translate(-50%, -50%) scale(1.8); 
+  }
+}
